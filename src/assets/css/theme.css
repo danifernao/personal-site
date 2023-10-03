@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700&display=swap");
+
+:root {
+  --color-app-background: 242, 242, 242;
+  --color-app-foreground: 217, 74, 100;
+  --color-app-text: 68, 68, 68;
+  --color-app-link: 191, 66, 88;
+  --color-app-link-light: 191, 166, 120;
+  --color-app-border: 221, 221, 221;
+  --color-content-background: 38, 47, 64;
+  --color-content-text: 242, 242, 242;
+  --color-content-link: 123, 107, 77;
+  --color-nav-icon: 191, 166, 120;
+  --color-info-background: 223, 237, 243;
+  --color-info-border: 0, 171, 255;
+  --color-success-background: 220, 232, 220;
+  --color-success-border: 0, 128, 0;
+  --color-warning-background: 251, 227, 184;
+  --color-warning-border: 255, 165, 0;
+  --color-error-background: 243, 228, 228;
+  --color-error-border: 255, 0, 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(120, 123, 131);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(101, 104, 112);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: rgb(67, 70, 78);
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(33, 39, 52);
+}
+
+html {
+  scrollbar-color: rgb(120, 123, 131) rgb(33, 39, 52);
+  scrollbar-width: thin;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 1rem;
+  min-height: 100vh;
+  background-color: rgb(var(--color-content-background));
+  color: rgb(var(--color-content-text));
+  font-family: "Lora", serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
+a {
+  color: rgb(var(--color-content-link));
+}
+
+main:not(#home) a {
+  color: rgb(var(--color-app-link));
+}
+
+blockquote {
+  margin: 1rem 0;
+}
+
+blockquote p {
+  position: relative;
+  margin: 1rem 0 0.3rem 0;
+  padding: 0.5rem 2rem 0.5rem 2.5rem;
+  font-style: italic;
+}
+
+blockquote p:before,
+blockquote p:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+blockquote p:before {
+  top: 0;
+  left: 0;
+  width: 2rem;
+  height: 2rem;
+  background-image: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' width='2rem' height='2rem' viewBox='0 0 24 24' fill='rgba(191, 166, 120, 0.5)'><path d='M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z'/></svg>");
+}
+
+blockquote p:after {
+  bottom: 0;
+  right: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' width='1.5rem' height='1.5rem' viewBox='0 0 24 24' fill='rgba(191, 166, 120, 0.5)'><path d='M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z'/></svg>");
+}
+
+blockquote footer {
+  text-align: right;
+  font-size: 0.8rem;
+}
+
+figcaption {
+  font-size: 0.9rem;
+}
+
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
