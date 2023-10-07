@@ -74,6 +74,7 @@
   }
   
   span {
+    display: flex;
     grid-area: icon;
     text-align: center;
     color: rgb(var(--color-app-foreground));
