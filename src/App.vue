@@ -18,7 +18,8 @@
   import Footer from './components/Footer.vue'
   import FirebaseError from './components/FirebaseError.vue'
   import LoadingIcon from './components/LoadingIcon.vue'
-  import { db } from './db'
+  import localData from './content/content.json'
+  import { auth, db } from './firebaseConfig'
   
   export default {
     name: 'App',
@@ -54,9 +55,10 @@
     },
     created () {
       this.$Progress.start()
-      
-      db.collection('app')
-        .get()
+
+      if (db && auth) {
+        auth.signInAnonymously()
+        .then(() => db.collection('app').get())   
         .then(snap => {
           snap.forEach(doc => {
             this.data[doc.id] = doc.data()
@@ -69,6 +71,13 @@
         .finally(() => {
           this.$Progress.finish()
         })
+      } else {
+        for (let key in localData) {
+          this.data[key] = localData[key]
+        }
+        this.setCurrentView()
+        this.$Progress.finish()
+      }
         
       this.$router.beforeEach((to, from, next) => {
         this.setCurrentView(to.name)
