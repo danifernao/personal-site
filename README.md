@@ -1,6 +1,6 @@
 # Soy Daniel
 
-Una página personal sencilla donde comparto mis redes sociales, algo sobre mí, mis citas favoritas y otros intereses.
+Mi página web personal, en la que comparto mis redes sociales, información sobre mí, mis citas favoritas y otros intereses.
 
 ### Instalación
 
@@ -20,9 +20,13 @@ Ubícate en la raíz del proyecto, abre el terminal en dicha ubicación y ejecut
 npm run serve
 ```
 
-### Preparar el proyecto para producción
+### Edición del contenido
 
-Ejecuta el siguiente comando para generar los archivos para producción:
+Puedes modificar el contenido textual de la página en el archivo `src/content/content.json`.
+
+### Preparación del proyecto para producción
+
+En la raíz del proyecto, ejecuta el siguiente comando para generar los archivos de producción:
 
 ```
 npm run build
