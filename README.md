@@ -12,8 +12,6 @@ Una página personal sencilla donde comparto mis redes sociales, algo sobre mí,
 npm install
 ```
 
-4. Renombra el archivo `.env.example` a `.env`.
-
 ### Visualización
 
 Ubícate en la raíz del proyecto, abre el terminal en dicha ubicación y ejecuta lo siguiente para iniciar el entorno de desarrollo y visualizarlo en el explorador web:
