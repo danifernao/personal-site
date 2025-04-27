@@ -20,13 +20,13 @@ Ubícate en la raíz del proyecto, abre el terminal en dicha ubicación y ejecut
 npm run serve
 ```
 
-### Edición del contenido
+### Edición
 
 Puedes modificar el contenido textual de la página en el archivo `src/content/content.json`.
 
-### Preparación del proyecto para producción
+### Producción
 
-En la raíz del proyecto, ejecuta el siguiente comando para generar los archivos de producción:
+Ubícate en la raíz del proyecto, abre el terminal en dicha ubicación y ejecuta lo siguiente para generar los archivos destinados a un entorno de producción:
 
 ```
 npm run build
