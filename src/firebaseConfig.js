@@ -8,8 +8,8 @@ const config = {
   projectId: process.env.VUE_APP_FIREBASE_PROJECT_ID
 }
 
-const isConfigValid = () => Object.values(config).every(value => !!value)
+const isConfigValid = Object.values(config).every(value => !!value)
 
-const app = isConfigValid() ? firebase.initializeApp(config) : null
-export const db = isConfigValid() ? app.firestore() : null
-export const auth = isConfigValid() ? app.auth() : null
+const app = isConfigValid ? firebase.initializeApp(config) : null
+export const db = isConfigValid ? app.firestore() : null
+export const auth = isConfigValid ? app.auth() : null
