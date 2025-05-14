@@ -1,8 +1,8 @@
-# Soy Daniel
+# Página web personal
 
 Mi página web personal, en la que comparto mis redes sociales, información sobre mí, mis citas favoritas y otros intereses.
 
-### Instalación
+## Instalación
 
 1. Asegúrate de tener instalado Node.js y NPM.
 2. Descarga o clona este repositorio e ingresa a él.
@@ -12,7 +12,7 @@ Mi página web personal, en la que comparto mis redes sociales, información sob
 npm install
 ```
 
-### Visualización
+## Visualización
 
 Ubícate en la raíz del proyecto, abre el terminal en dicha ubicación y ejecuta lo siguiente para iniciar el entorno de desarrollo y visualizarlo en el explorador web:
 
@@ -20,11 +20,11 @@ Ubícate en la raíz del proyecto, abre el terminal en dicha ubicación y ejecut
 npm run serve
 ```
 
-### Edición
+## Edición
 
 Puedes modificar el contenido textual de la página en el archivo `src/content/content.json`.
 
-### Producción
+## Producción
 
 Ubícate en la raíz del proyecto, abre el terminal en dicha ubicación y ejecuta lo siguiente para generar los archivos destinados a un entorno de producción:
 
